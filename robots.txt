@@ -1,0 +1,6 @@
+# robots.txt file for https://abdullah-dev.netlify.app
+
+Sitemap: https://abdullah-dev.netlify.app/sitemap.xml
+
+User-agent: *
+Disallow:

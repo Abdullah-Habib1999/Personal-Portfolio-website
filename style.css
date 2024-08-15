@@ -57,6 +57,18 @@ nav .openMenu {
   cursor: pointer;
 }
 
+.social-media-icons i {
+  font-size: 2rem;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  padding: 12px;
+}
+
+#social-media-icons {
+  margin-top: 5rem;
+}
+
 nav .mainMenu .closeMenu , .icons i {
   font-size: 2rem;
   display: none;
@@ -67,9 +79,9 @@ nav .mainMenu .closeMenu , .icons i {
 .fa-facebook:hover {color: rgb(0, 110, 255);}
 .fa-twitter:hover {color: rgb(90, 160, 252);}
 .fa-instagram:hover {color: rgb(207, 35, 192);}
-.fa-github:hover {color: rgb(144, 10, 206);}
+.fa-linkedin:hover {color: rgb(10, 102, 194);}
 
-.call-btn {
+#call-btn {
   border: none;
   border-radius: 0;
   padding: 8px 12px;
@@ -80,14 +92,14 @@ nav .mainMenu .closeMenu , .icons i {
   transition-duration: 500ms;
   transition-timing-function: ease-in-out;
 }
-.call-btn:hover {
+#call-btn:hover {
   background-color: black;
   color: white;
   box-shadow: 2px 2px 20px white, -2px -2px 20px white;
 }
 
 .container {
-    height: 100vh;
+  height: 70vh;
   background-image: url(elements/logo.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -125,19 +137,71 @@ nav .mainMenu .closeMenu , .icons i {
 }
 
 #about {
-  height: 60vh;
+  height: auto;
   background-color: #55535b;
 }
+
 .about {
-  padding: 5em 10em 5em 20em;
+  padding: 2em 10em 5em 20em;
 }
 
-.about h1 {
+.about h2, h3, h4 {
   color: white;
 }
 .about p {
   color: white;
   margin-top: 50px;
+}
+
+.education {
+  margin-top: 50px;
+}
+
+.course-name, .college-name {
+  margin-top: 10px;
+}
+
+.edu-details {
+  margin-top: 10px !important;
+}
+
+.edu-item {
+  padding: 10px 0 10px 10px;
+}
+
+.certifications, #experience {
+  margin-top: 50px;
+}
+
+.certifications, #experience ul {
+  padding: 10px 0 10px 10px;
+  color: #fff;
+}
+
+.certifications li {
+  margin-top: 10px;
+}
+
+.cert-issue-auth, .experience-dur, .experience-loc {
+  margin-top: 0px !important;
+}
+
+.cert-details {
+  padding: 10px 0 10px 10px;
+}
+
+.experience {
+  padding-top: 10px;
+}
+
+.ex-details {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.ex-details-more {
+  padding-left: 15px;
+  padding-top: 5px;
 }
 
 .dwnld-cv {
@@ -163,16 +227,15 @@ footer h6 {
 }
 
 #skills {
-  height: 80vh;
+  height: 35vh;
   display: flex;
   justify-content: center;
   align-items: center;
   animation: fadein 2s;
 
-
 }
 
-#skills h1 {
+#skills h2 {
   color: white;
 }
 
@@ -182,13 +245,62 @@ footer h6 {
   list-style: none;
 }
 
-#contact {
-  height: 100vh;
+#portfolio {
+  height: auto;
   color: white;
   background-color: #55535b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: fadein 2s;
+}
+
+.portfolio {
+  padding: 5em 10em 5em 20em;
+}
+
+.item {
+  margin-top: 1em;
+}
+
+#portfolio h1 {
+  padding-top: 2em;
+}
+
+.portfolio ul {
+  list-style: none;
+}
+
+.portfolio ul .item {
+  margin-top: 1em;
+  border: 1px solid #fff;
+  padding: 1em;
+}
+
+.portfolio ul li a {
+  color: #fff;
+}
+
+.portfolio ul li p {
+  padding-top: 1em;
+}
+
+.child-portfolio {
+  padding-left: 1em;
+}
+
+.text-box ul li {
+  padding-top: 1em;
 }
 
 #contact {
+  height: 100vh;
+  color: white;
+  background-color: #000000;
+}
+
+#contact {  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -280,27 +392,50 @@ form input, textarea {
     height: 100vh;
   }
 
-  .call-btn:hover {
+  #call-btn:hover {
     background-color: white;
     color: black;
     box-shadow: none;
   }
 
+  #about {
+    height: auto;
+  }
+
   .about {
-    padding: 2rem;
+    padding: 5rem 2rem 2rem 2rem;
   }
   .about p {
     font-size: smaller;
+  }
+
+  #skills {
+    padding: 0 10px 0 10px;
+    height: 45vh;
+  }
+
+  .portfolio {
+    padding: 5px;
   }
   
 }
   /* tablet */
   @media only screen and (min-width: 768px) and (max-width: 992px) {
-    .about {
-      padding: 10rem 10rem 4rem 10rem;
+
+    .container {
+      height: 66vh;
     }
+
+    .about {
+      padding: 5rem;
+    }
+
     #about {
-      height: 40vh;
+      height: auto;
+    }
+
+    .portfolio {
+      padding: 5em;
     }
     
   }

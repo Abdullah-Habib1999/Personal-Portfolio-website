@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Montserrat:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+  }
+
+  .logo img {
+    height: 4rem;
+    width: 4rem;
+    transform: scaleX(-1);
+  }
+  
+  nav {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    align-items: center;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 15vh;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu li {
+    list-style: none;
+    /* border: 2px solid red; */
+    margin: 0 10px;
+  }
+  .menu li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .menu li a:hover {
+    text-decoration: underline;
+    transition: 1s;
+  }
+  
+  nav .openMenu {
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .social-media-icons i {
+    font-size: 2rem;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    padding: 12px;
+  }
+  
+  #social-media-icons {
+    margin-top: 5rem;
+  }
+  
+  nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .fa-facebook:hover {color: rgb(0, 110, 255);}
+  .fa-twitter:hover {color: rgb(90, 160, 252);}
+  .fa-instagram:hover {color: rgb(207, 35, 192);}
+  .fa-linkedin:hover {color: rgb(10, 102, 194);}
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+   }
+   
+   /* Firefox < 16 */
+   @-moz-keyframes fadein {
+    from { opacity: 0; }
+   }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    color: #fff;
+}
+
+h2 {
+    padding-top: 20px;
+}
+
+a {
+    color: #fff;
+}
+
+
+/* Media Querries */
+  /* mobile */
+  @media only screen and (max-width: 600px) {
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease;
+        line-height: 50px;
+        display: none;
+      }
+    
+      nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    
+      }
+    
+      nav .openMenu {
+        display: block;
+      }
+    
+      nav .mainMenu li a {
+        font-size: 1.6rem;
+      }
+    
+      .icons i {
+        display: inline-block;
+        padding: 12px;
+      }
+  }
