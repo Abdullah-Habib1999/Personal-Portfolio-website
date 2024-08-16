@@ -12,11 +12,11 @@
   <changefreq>monthly</changefreq>
 </url>
 
-<url>
+<!-- <url>
   <loc>https://abdullah-dev.netlify.app/blogs</loc>
   <lastmod>2024-08-16T07:01:00+00:00</lastmod>
   <changefreq>mWeekly</changefreq>
-</url>
+</url> -->
 
 
 </urlset>
