@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Montserrat:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+  }
+
+  .logo img {
+    height: 4rem;
+    width: 4rem;
+    transform: scaleX(-1);
+  }
+  
+  nav {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    align-items: center;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 15vh;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu li {
+    list-style: none;
+    /* border: 2px solid red; */
+    margin: 0 10px;
+  }
+  .menu li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .menu li a:hover {
+    text-decoration: underline;
+    transition: 1s;
+  }
+  
+  nav .openMenu {
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .social-media-icons i {
+    font-size: 2rem;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    padding: 12px;
+  }
+  
+  #social-media-icons {
+    margin-top: 5rem;
+  }
+  
+  nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .fa-facebook:hover {color: rgb(0, 110, 255);}
+  .fa-twitter:hover {color: rgb(90, 160, 252);}
+  .fa-instagram:hover {color: rgb(207, 35, 192);}
+  .fa-linkedin:hover {color: rgb(10, 102, 194);}
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+   }
+   
+   /* Firefox < 16 */
+   @-moz-keyframes fadein {
+    from { opacity: 0; }
+   }
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blog-header {
+  text-align: center;
+  padding: 114px 20px 10px 20px;
+  background-color: #222;
+  color: #fff;
+}
+
+.blog-container {
+  max-width: 800px;
+  margin: 20px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.blog-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.blog-entry a img {
+  height: 275px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.blog-entry a {
+  text-decoration: underline;
+  color: #0f0f0f;
+  font-size: 18px;
+  font-weight: bold;
+}
+.blog-entry p {
+  margin: 5px 0;
+  color: #555;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+footer a {
+  color: #fefefe;
+  text-decoration: underline;
+}
+
+
+/* Media Querries */
+  /* mobile */
+  @media only screen and (max-width: 600px) {
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease;
+        line-height: 50px;
+        display: none;
+      }
+    
+      nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    
+      }
+    
+      nav .openMenu {
+        display: block;
+      }
+    
+      nav .mainMenu li a {
+        font-size: 1.6rem;
+      }
+    
+      .icons i {
+        display: inline-block;
+        padding: 12px;
+      }
+
+      .blog-entry a img {
+        height: 125px;
+      }
+  }

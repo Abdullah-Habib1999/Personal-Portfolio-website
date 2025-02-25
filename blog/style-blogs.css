@@ -8,7 +8,7 @@
   }
   
   body {
-    font-family: "Montserrat", sans-serif;
+    font-family: Poppins;
     background-color: black;
   }
 
@@ -90,22 +90,37 @@
     from { opacity: 0; }
    }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
+   .blog-header {
+    text-align: center;
+    padding: 114px 20px 10px 20px;
     color: #fff;
 }
-
-h2 {
-    padding-top: 20px;
+.header-image {
+    max-height: 250px;
+    object-fit: cover;
+}
+.blog-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
-a {
-    color: #fff;
+p {
+    padding: 5px 0;
 }
+
+ul {
+    padding: 8px 0 8px 50px;
+}
+
+footer h6 {
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+  }
 
 
 /* Media Querries */
@@ -146,5 +161,9 @@ a {
       .icons i {
         display: inline-block;
         padding: 12px;
+      }
+
+      .header-image {
+        max-height: 200px;
       }
   }
